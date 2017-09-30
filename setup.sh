@@ -1,11 +1,5 @@
 #!/bin/bash -x
 
-#installing dependencies
-
-apt install -y git
-apt install -y wget
-#apt install -y ansible
-
 #setup environment
 mkdir -p /opt/iiab
 
