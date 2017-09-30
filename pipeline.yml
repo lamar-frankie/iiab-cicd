@@ -55,8 +55,6 @@ jobs:
         - |
           chmod -R 777 *
           ./cicd-repo/setup.sh
-          cd iiab/iiab/scripts
-          ./ansible
 
 #- name: Setup Ansible
 #  public: true

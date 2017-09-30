@@ -1,13 +1,13 @@
 #!/bin/bash -x
 
 #setup environment
-mkdir -p /opt/iiab
+mkdir -p /iiab
 
-mv iiab /opt/iiab
-mv admin-console /opt/iiab
-mv menu /opt/iiab
-mv factory /opt/iiab
-mv local_var.yml /opt iiab
+mv iiab /iiab
+mv admin-console /iiab
+mv menu /iiab
+mv factory /iiab
+mv cicd-repo/local_var.yml /iiab/iiab/vars/
 
 export DEBIAN_FRONTEND=noninteractive
 
