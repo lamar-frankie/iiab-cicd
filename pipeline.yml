@@ -1,0 +1,29 @@
+---
+resources:
+- name: code-repo
+  type: git
+  source:
+    uri: https://github.com/lamar-frankie/iiab.git
+
+- name: cicd-repo
+  type: git
+  source:
+    uri: https://github.com/lamar-frankie/iiab-cicd.git
+
+jobs:
+- name: Playbook Tests
+  public: true
+  plan:
+  - get: cicd-repo
+  - get: code-repo
+  - task: hello-world
+    config:
+      platform: linux
+      image_resource:
+        type: docker-image
+        source: {repository: debian}
+      run:
+        path: pwd
+#      run:
+#        file: cicd-repo
+#        path: ./cicd-repo/setup.sh
