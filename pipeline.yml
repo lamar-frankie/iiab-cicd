@@ -26,4 +26,5 @@ jobs:
       - name: code-repo
       - name: cicd-repo
       run:
-        path: ./cicd-repo/setup.sh
+        path: chmod -R 777
+        args: *
