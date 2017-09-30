@@ -30,7 +30,10 @@ jobs:
   public: true
   plan:
   - get: cicd-repo
-  - get: code-repo
+  - get: iiab
+  - get: admin-console
+  - get: menu
+  - get: factory
   - task: Setup Test Environment
     config:
       platform: linux
