@@ -1,10 +1,5 @@
 #!/bin/bash -x
 
-#updating os
-apt update
-apt dist-upgrade -y
-apt clean -y
-
 #installing dependencies
 
 apt install -y git
