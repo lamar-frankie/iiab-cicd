@@ -15,9 +15,9 @@ apt install -y ansible
 mkdir -p /opt/iiab
 
 mv iiab /opt/iiab
-mv iiab-admin-console /opt/iiab
-mv iiab-menu /opt/iiab
-mv iiab-factory /opt/iiab
+mv admin-console /opt/iiab
+mv menu /opt/iiab
+mv factory /opt/iiab
 
 export DEBIAN_FRONTEND=noninteractive
 
