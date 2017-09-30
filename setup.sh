@@ -9,7 +9,7 @@ apt clean -y
 
 apt install -y git
 apt install -y wget
-apt install -y ansible
+#apt install -y ansible
 
 #setup environment
 mkdir -p /opt/iiab
