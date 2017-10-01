@@ -5,7 +5,7 @@ resources:
   source:
     uri: https://github.com/lamar-frankie/iiab-cicd.git
 
-- name: iiab
+- name: code-repo
   type: git
   source:
     uri: https://github.com/iiab/iiab.git
@@ -30,7 +30,7 @@ jobs:
   public: true
   plan:
   - get: cicd-repo
-  - get: iiab
+  - get: code-repo
   - get: admin-console
   - get: menu
   - get: factory
@@ -42,12 +42,13 @@ jobs:
         source: {repository: debian}
       inputs:
       - name: cicd-repo
-      - name: iiab
+      - name: code-repo
       - name: admin-console
       - name: menu
       - name: factory
       outputs:
-      - name: /opt/iiab
+      - name: iiab-resources
+      - path: iiab
       run:
         path: sh
         args:
