@@ -5,7 +5,12 @@ apt update
 apt upgrade -y
 apt clean -y
 
-apt install -y ansible
+mkdir playbook-output
+
+mv iiab playbook-output
+mv admin-console playbook-output
+mv menu playbook-output
+mv factory playbook-output
 
 export DEBIAN_FRONTEND=noninteractive
 
