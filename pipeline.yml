@@ -53,7 +53,7 @@ jobs:
         args:
         - -exc
         - |
-          chmod -R 777 *
+          chmod -R 755 *
           ./cicd-repo/setup.sh
 
 #- name: Setup Ansible
