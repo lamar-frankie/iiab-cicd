@@ -5,6 +5,8 @@ apt update
 apt upgrade -y
 apt clean -y
 
+apt install -y ansible
+
 export DEBIAN_FRONTEND=noninteractive
 
 
